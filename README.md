@@ -1,4 +1,4 @@
-# 🐦 Twitter Sentiment Analysis
+#  Twitter Sentiment Analysis
 
 This project analyzes Twitter data to determine public sentiment (positive, negative, or neutral) using Natural Language Processing techniques.
 
