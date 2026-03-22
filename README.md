@@ -3,18 +3,18 @@
 Binary sentiment classification (positive/negative) on Twitter data using 
 a complete NLP pipeline with model serialization for production inference.
 
-## 🎯 Results
+##  Results
 - Logistic Regression with GridSearchCV hyperparameter tuning
 - Evaluated with accuracy, precision, confusion matrix
 - Model serialized via pickle for inference on new tweets
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **NLP:** CountVectorizer, text preprocessing, stopword removal
 - **Model:** Logistic Regression (L2 regularization, GridSearchCV)
 - **Evaluation:** Accuracy, Precision, Confusion Matrix
 - **Libraries:** Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Pickle
 
-## 📁 Project Structure
+##  Project Structure
 ```
 ├── Twitter_Sentiment_Analysis.ipynb  # Full pipeline
 ├── vectorizer.pkl                     # Saved CountVectorizer
@@ -23,7 +23,7 @@ a complete NLP pipeline with model serialization for production inference.
 └── images/                            # Visualizations
 ```
 
-## 🔍 Pipeline
+##  Pipeline
 1. Text preprocessing — lowercasing, punctuation removal, stopwords
 2. CountVectorizer feature extraction
 3. Logistic Regression with GridSearchCV (C, penalty, solver)
