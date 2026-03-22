@@ -1,17 +1,34 @@
-#  Twitter Sentiment Analysis
+# Twitter Sentiment Analysis — NLP Pipeline
 
-This project analyzes Twitter data to determine public sentiment (positive, negative, or neutral) using Natural Language Processing techniques.
+Binary sentiment classification (positive/negative) on Twitter data using 
+a complete NLP pipeline with model serialization for production inference.
 
-## Contents
-- `Twitter_Sentiment_Analysis.ipynb` — Jupyter Notebook containing full code and explanations
-- `data/` — Folder for dataset files (if any)
-- `output/` — Folder for results, charts, or models
+## 🎯 Results
+- Logistic Regression with GridSearchCV hyperparameter tuning
+- Evaluated with accuracy, precision, confusion matrix
+- Model serialized via pickle for inference on new tweets
 
-## Tech Stack
-- Python 
-- Pandas, NumPy
-- NLTK / TextBlob
-- Matplotlib / Seaborn
+## 🛠️ Tech Stack
+- **NLP:** CountVectorizer, text preprocessing, stopword removal
+- **Model:** Logistic Regression (L2 regularization, GridSearchCV)
+- **Evaluation:** Accuracy, Precision, Confusion Matrix
+- **Libraries:** Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Pickle
 
-## Results
-Achieved sentiment classification with visual analysis of tweet polarity distribution.
+## 📁 Project Structure
+```
+├── Twitter_Sentiment_Analysis.ipynb  # Full pipeline
+├── vectorizer.pkl                     # Saved CountVectorizer
+├── model.pkl                          # Saved Logistic Regression model
+├── data/                              # Dataset
+└── images/                            # Visualizations
+```
+
+## 🔍 Pipeline
+1. Text preprocessing — lowercasing, punctuation removal, stopwords
+2. CountVectorizer feature extraction
+3. Logistic Regression with GridSearchCV (C, penalty, solver)
+4. Feature importance analysis via model coefficients
+5. Model + vectorizer saved with pickle
+
+## 👩‍💻 Author
+Bhanu Priya Palivela | [GitHub](https://github.com/priyapalivela)
