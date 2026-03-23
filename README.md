@@ -1,4 +1,4 @@
-# Twitter Sentiment Analysis — NLP Pipeline
+# Twitter Sentiment Analysis - NLP Pipeline
 
 Binary sentiment classification (positive/negative) on Twitter data using 
 a complete NLP pipeline with model serialization for production inference.
